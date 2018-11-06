@@ -12,17 +12,17 @@ import Vue from 'vue/dist/vue.esm';
 
 import TurbolinksAdapter from 'vue-turbolinks';
 
-import ElementUI from 'element-ui';
-import '../../assets/stylesheets/vueapp/element-ui-variables.scss';
-import locale from 'element-ui/lib/locale/lang/en';
+// import ElementUI from 'element-ui';
+// import '../../assets/stylesheets/vueapp/element-ui-variables.scss';
+// import locale from 'element-ui/lib/locale/lang/en';
 import RailsAjax from '../vue-app/http/http'
 
 import App from '../app.vue';
-import SelectCustomTag from '../vue-app/components/element-ui/SelectCustomTag';
+// import SelectCustomTag from '../vue-app/components/element-ui/SelectCustomTag';
 import CardForm from '../vue-app/components/CardForm';
 
 Vue.use(TurbolinksAdapter);
-Vue.use(ElementUI, {locale});
+// Vue.use(ElementUI, {locale});
 Vue.use(RailsAjax);
 
 document.addEventListener('turbolinks:load', () => {
@@ -30,7 +30,7 @@ document.addEventListener('turbolinks:load', () => {
         el        : '[data-app="vue"]',
         components: {
             App,
-            SelectCustomTag,
+            // SelectCustomTag,
             CardForm
         }
     });
